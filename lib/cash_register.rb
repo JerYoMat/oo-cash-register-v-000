@@ -17,8 +17,10 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @total = @total + price * quantity
-    quantity.times do |title|
+    counter = 0 
+    while counter < quantity 
       @items << title 
+      counter += 1 
     end 
     
   
