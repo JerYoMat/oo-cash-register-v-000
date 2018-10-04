@@ -14,8 +14,8 @@ class CashRegister
     @total 
   end 
   
-  def self.add_item(title, price)
-    new_total = @total.to_i + price.to_i 
+  def self.add_item(title, price, quantity = 1)
+    new_total = @total.to_i + price * quantity
     @cart << title  
   end 
   
