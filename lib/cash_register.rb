@@ -17,9 +17,11 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @total = @total + price * quantity
-    adding_items = Array.new(quanity, title)
-    binding.pry 
-    @items = @items + adding_items
+    quantity.times do |title|
+      @items << title 
+    end 
+    
+  
   end 
   
   def apply_discount
