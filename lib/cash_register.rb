@@ -11,4 +11,5 @@ class CashRegister
   def self.total 
     @total 
   end 
+  
 end 
