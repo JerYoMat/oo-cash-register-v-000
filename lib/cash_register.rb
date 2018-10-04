@@ -10,7 +10,7 @@ class CashRegister
   
   end 
 
-  def self.total 
+  def total 
     @total 
   end 
   
@@ -18,6 +18,6 @@ class CashRegister
     @total = @total + price * quantity
   end 
   
-  def apply_discount
+
   
 end 
